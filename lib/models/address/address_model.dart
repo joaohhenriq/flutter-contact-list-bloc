@@ -1,8 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'geo_model.dart';
+import 'package:flutter_contact_list_bloc/models/geo/geo_model.dart';
 
-part 'address_model.g.dart';
+part 'package:flutter_contact_list_bloc/models/address/address_model.g.dart';
 
 @JsonSerializable()
 class AddressModel {

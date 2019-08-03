@@ -26,6 +26,7 @@ dependencies:
   json_annotation:
   bloc_pattern:
   rxdart:
+  dio:
 
 dev_dependencies:
   flutter_test:
