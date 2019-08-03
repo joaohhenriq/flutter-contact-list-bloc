@@ -15,6 +15,7 @@ class UserService {
 
       return userModelList;
     } catch (e) {
+      print(e);
       throw Exception();
     }
   }

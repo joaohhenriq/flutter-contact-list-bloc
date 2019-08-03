@@ -4,8 +4,8 @@ part 'geo_model.g.dart';
 
 @JsonSerializable()
 class GeoModel {
-  double lat;
-  double lng;
+  String lat;
+  String lng;
 
   GeoModel();
 

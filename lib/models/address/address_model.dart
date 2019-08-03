@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'package:flutter_contact_list_bloc/models/geo/geo_model.dart';
 
-part 'package:flutter_contact_list_bloc/models/address/address_model.g.dart';
+part 'address_model.g.dart';
 
 @JsonSerializable()
 class AddressModel {
@@ -10,7 +10,7 @@ class AddressModel {
   String suite;
   String city;
   String zipcode;
-  GeoModel geoModel;
+  GeoModel geo;
 
   AddressModel();
 

@@ -11,22 +11,22 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) {
     ..id = json['id'] as int
     ..name = json['name'] as String
     ..username = json['username'] as String
-    ..addressModel = json['addressModel'] == null
+    ..address = json['address'] == null
         ? null
-        : AddressModel.fromJson(json['addressModel'] as Map<String, dynamic>)
+        : AddressModel.fromJson(json['address'] as Map<String, dynamic>)
     ..phone = json['phone'] as String
     ..website = json['website'] as String
-    ..companyModel = json['companyModel'] == null
+    ..company = json['company'] == null
         ? null
-        : CompanyModel.fromJson(json['companyModel'] as Map<String, dynamic>);
+        : CompanyModel.fromJson(json['company'] as Map<String, dynamic>);
 }
 
 Map<String, dynamic> _$UserModelToJson(UserModel instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'username': instance.username,
-      'addressModel': instance.addressModel,
+      'address': instance.address,
       'phone': instance.phone,
       'website': instance.website,
-      'companyModel': instance.companyModel,
+      'company': instance.company,
     };

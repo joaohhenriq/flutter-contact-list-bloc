@@ -8,8 +8,8 @@ part of 'geo_model.dart';
 
 GeoModel _$GeoModelFromJson(Map<String, dynamic> json) {
   return GeoModel()
-    ..lat = (json['lat'] as num)?.toDouble()
-    ..lng = (json['lng'] as num)?.toDouble();
+    ..lat = json['lat'] as String
+    ..lng = json['lng'] as String;
 }
 
 Map<String, dynamic> _$GeoModelToJson(GeoModel instance) => <String, dynamic>{

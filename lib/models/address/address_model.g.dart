@@ -12,9 +12,9 @@ AddressModel _$AddressModelFromJson(Map<String, dynamic> json) {
     ..suite = json['suite'] as String
     ..city = json['city'] as String
     ..zipcode = json['zipcode'] as String
-    ..geoModel = json['geoModel'] == null
+    ..geo = json['geo'] == null
         ? null
-        : GeoModel.fromJson(json['geoModel'] as Map<String, dynamic>);
+        : GeoModel.fromJson(json['geo'] as Map<String, dynamic>);
 }
 
 Map<String, dynamic> _$AddressModelToJson(AddressModel instance) =>
@@ -23,5 +23,5 @@ Map<String, dynamic> _$AddressModelToJson(AddressModel instance) =>
       'suite': instance.suite,
       'city': instance.city,
       'zipcode': instance.zipcode,
-      'geoModel': instance.geoModel,
+      'geo': instance.geo,
     };
